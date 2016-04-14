@@ -1,0 +1,32 @@
+;
+; KernelBeep.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=
+ClassGuid= {13377331-1337-1337-0000-000000000000}
+Provider=A200K
+DriverVer=
+CatalogFile=test.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+
+
+[Strings]
+ManufacturerName=""
+ClassName=""
+DiskName="KernelBeep Source Disk"
