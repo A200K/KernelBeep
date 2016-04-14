@@ -14,7 +14,7 @@ BOOLEAN DoBeep( ULONG Frequency, ULONG Duration )
 	BOOLEAN result = FALSE;
 	LARGE_INTEGER delay;
 
-	delay.QuadPart = Int32x32To64( Duration, -10000 );
+	delay.QuadPart = Int32x32To64( Duration, -10000 ); // Int32x32ToSooS
 
 	result = _HalMakeBeep( Frequency );
 
